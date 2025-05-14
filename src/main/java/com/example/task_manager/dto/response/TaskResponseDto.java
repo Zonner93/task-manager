@@ -1,12 +1,14 @@
-package com.example.task_manager.dto;
+package com.example.task_manager.dto.response;
 
 import lombok.Builder;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.Set;
 
 @Builder
-public class TaskDto {
+@Data
+public class TaskResponseDto {
     private Long id;
     private String title;
     private String description;

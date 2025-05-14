@@ -1,9 +1,11 @@
-package com.example.task_manager.dto;
+package com.example.task_manager.dto.response;
 
 import lombok.Builder;
+import lombok.Data;
 
 @Builder
-public class UserDto {
+@Data
+public class UserResponseDto {
     private Long id;
     private String firstName;
     private String lastName;
