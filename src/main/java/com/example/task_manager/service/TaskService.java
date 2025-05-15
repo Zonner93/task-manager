@@ -45,7 +45,15 @@ public class TaskService {
     }
 
     public TaskResponseDto updateTask(Long id, TaskRequestDto requestDto) {
-        return null;
+        Task task = taskRepository.findById(id)
+                .orElseThrow(() -> new TaskNotFoundException(id.toString()));
+
+        task.setTitle(requestDto.getTitle());
+        task.setDescription(requestDto.getDescription());
+        task.setDueDate(requestDto.getDueDate());
+
+        Task updatedTask = taskRepository.save(task);
+        return TaskMapper.toResponseDto(updatedTask);
     }
 
     public Page<TaskResponseDto> getTasks(String title, String description, TaskStatus status, LocalDateTime dueDateFrom, LocalDateTime dueDateTo, Pageable pageable) {
