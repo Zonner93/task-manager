@@ -2,8 +2,8 @@ package com.example.task_manager.service;
 
 import com.example.task_manager.dto.request.UserRequestDto;
 import com.example.task_manager.dto.response.UserResponseDto;
-import com.example.task_manager.exception.UserAlreadyExistsException;
-import com.example.task_manager.exception.UserNotFoundException;
+import com.example.task_manager.exception.user.UserAlreadyExistsException;
+import com.example.task_manager.exception.user.UserNotFoundException;
 import com.example.task_manager.mapper.UserMapper;
 import com.example.task_manager.model.User;
 import com.example.task_manager.repository.UserRepository;

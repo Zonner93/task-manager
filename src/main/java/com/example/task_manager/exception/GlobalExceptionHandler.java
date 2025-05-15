@@ -1,7 +1,8 @@
-package com.example.task_manager.exception.handler;
+package com.example.task_manager.exception;
 
-import com.example.task_manager.exception.UserAlreadyExistsException;
-import com.example.task_manager.exception.UserNotFoundException;
+import com.example.task_manager.exception.task.TaskNotFoundException;
+import com.example.task_manager.exception.user.UserAlreadyExistsException;
+import com.example.task_manager.exception.user.UserNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -17,5 +18,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(UserAlreadyExistsException.class)
     public ResponseEntity<String> handleUserAlreadyExistsException(UserAlreadyExistsException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(TaskNotFoundException.class)
+    public ResponseEntity<String> handleUserNotFound(TaskNotFoundException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 }

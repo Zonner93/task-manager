@@ -40,6 +40,11 @@ public class Task {
     @FutureOrPresent
     private LocalDateTime dueDate;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "task_assigned_users",
+            joinColumns = @JoinColumn(name = "task_id"),
+            inverseJoinColumns = @JoinColumn(name = "user_id")
+    )
     private Set<User> assignedUsers = new HashSet<>();
 }

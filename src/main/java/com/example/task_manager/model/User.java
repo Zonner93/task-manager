@@ -6,6 +6,9 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Table(name = "users")
 @Getter
@@ -32,6 +35,9 @@ public class User {
     @Size(max = 255)
     @Column(unique = true)
     private String email;
+
+    @ManyToMany(mappedBy = "assignedUsers")
+    private Set<Task> assignedTasks = new HashSet<>();
 
     public User(String firstName, String lastName, String email) {
         this.firstName = firstName;
