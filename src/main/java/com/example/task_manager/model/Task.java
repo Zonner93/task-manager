@@ -47,4 +47,11 @@ public class Task {
             inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     private Set<User> assignedUsers = new HashSet<>();
+
+    public Task(String title, String description, TaskStatus status, LocalDateTime dueDate) {
+        this.title = title;
+        this.description = description;
+        this.status = status;
+        this.dueDate = dueDate;
+    }
 }
