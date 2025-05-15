@@ -1,8 +1,6 @@
 # 📋 Task Manager API
 
 Welcome to **Task Manager API** — a simple and efficient REST service to manage tasks and users!  
-Built with **Spring Boot**, **Spring Data JPA**, and **PostgreSQL**.
-
 ---
 
 ## 🚀 Features
