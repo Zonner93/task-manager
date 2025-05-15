@@ -1,5 +1,6 @@
 package com.example.task_manager.mapper;
 
+import com.example.task_manager.constans.TaskStatus;
 import com.example.task_manager.dto.request.TaskRequestDto;
 import com.example.task_manager.dto.response.TaskResponseDto;
 import com.example.task_manager.model.Task;
@@ -15,6 +16,7 @@ public class TaskMapper {
                 .title(requestDto.getTitle())
                 .description(requestDto.getDescription())
                 .dueDate(requestDto.getDueDate())
+                .status(TaskStatus.UNASSIGNED)
                 .build();
     }
 
