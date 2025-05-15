@@ -1,0 +1,22 @@
+INSERT INTO tasks (title, description, due_date, status)
+VALUES
+('Prepare report', 'Prepare the quarterly financial report', '2025-06-10T12:00:00', 'UNUNASSIGNED'),
+('Team meeting', 'Weekly team sync-up meeting', '2025-06-05T10:00:00', 'UNASSIGNED'),
+('Code review', 'Review new feature implementation', '2025-06-06T15:00:00', 'UNUNASSIGNED'),
+('Client call', 'Call with key client to discuss requirements', '2025-06-07T09:30:00', 'UNASSIGNED'),
+('Deploy update', 'Deploy latest patch to production', '2025-06-08T16:00:00', 'UNUNASSIGNED'),
+('Write documentation', 'Update API documentation', '2025-06-12T11:00:00', 'UNASSIGNED'),
+('Bug fixing', 'Fix priority bugs from backlog', '2025-06-11T14:00:00', 'UNUNASSIGNED'),
+('Database migration', 'Plan and execute DB migration', '2025-06-09T13:00:00', 'UNASSIGNED'),
+('Backup check', 'Verify automated backups', '2025-06-10T08:00:00', 'UNUNASSIGNED'),
+('Security audit', 'Conduct internal security review', '2025-06-13T17:00:00', 'UNUNASSIGNED'),
+('UI improvements', 'Enhance the user interface', '2025-06-14T10:30:00', 'UNASSIGNED'),
+('Performance test', 'Run performance benchmarks', '2025-06-15T11:45:00', 'UNUNASSIGNED'),
+('Recruitment', 'Interview candidates for developer role', '2025-06-16T09:00:00', 'UNUNASSIGNED'),
+('Marketing plan', 'Create Q3 marketing strategy', '2025-06-17T12:00:00', 'UNASSIGNED'),
+('Legal review', 'Review new legal contracts', '2025-06-18T13:30:00', 'UNUNASSIGNED'),
+('Budget planning', 'Estimate department budget', '2025-06-19T10:00:00', 'UNUNASSIGNED'),
+('Refactor code', 'Improve legacy codebase', '2025-06-20T16:15:00', 'UNASSIGNED'),
+('Product demo', 'Demo product to internal stakeholders', '2025-06-21T14:30:00', 'UNUNASSIGNED'),
+('Internal training', 'Organize training for new tools', '2025-06-22T15:45:00', 'UNUNASSIGNED'),
+('Customer feedback', 'Analyze recent feedback', '2025-06-23T11:20:00', 'UNASSIGNED');
